@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #d1f5ff;
+    --accent-color: #eef8ff;
+    --accent-color2: #ffff4f;
+    --text-color: black;
+    --background-color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.hero {
+    background-image: url("../images/happy-clients.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.hero article img {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.history, .adventure-awaits {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--secondary-color);
+    margin: 20px 0;
+}
+
+.history h2, .adventure-awaits h2 {
+    font-size: 28px;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery img {
+    margin: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
