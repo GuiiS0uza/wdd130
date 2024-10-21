@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     max-width: 1200px;
@@ -16,79 +16,140 @@ body {
     padding: 0;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--accent-color);
+}
+
 .logo {
+    grid-column: 1;
     width: 100px;
 }
 
 nav ul {
     display: flex;
+    justify-content: flex-end;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: var(--text-color);
     font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color2);
 }
 
 .hero {
     background-image: url("../images/happy-clients.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 1px;
+    padding: 50px 0;
     text-align: center;
     color: var(--primary-color);
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
 .hero article {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
 }
 
 .hero article img {
-    flex: 1;
+    max-width: 200px;
     margin-right: 20px;
 }
 
-.history, .adventure-awaits {
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--secondary-color);
     text-align: center;
     padding: 40px 20px;
-    background-color: var(--secondary-color);
-    margin: 20px 0;
 }
 
-.history h2, .adventure-awaits h2 {
+.history h2 {
+    grid-column: span 2;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.history img {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.history p {
+    padding: 0 20px;
+}
+
+.adventure-awaits {
+    padding: 40px 20px;
+    background-color: var(--accent-color);
+    text-align: center;
+}
+
+.adventure-awaits h2 {
     font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .adventure-gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.adventure-gallery figure {
+    margin: 0;
 }
 
 .adventure-gallery img {
-    margin: 10px;
+    width: 200px;
+}
+
+.adventure-gallery figcaption {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
 }
 
 .social-links {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
-.social-links a {
-    margin: 0 10px;
+.social-links img {
+    width: 50px;
 }
