@@ -11,25 +11,72 @@ text-font roboto-thin
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>White Rafting Site | WDD 130</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Rafting | WDD 130</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/raft.png" alt="Rafting-Logo" width="200" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+    <main>
+        <section class="hero">
+            <h1>Welcome to White Water Rafting Adventures!</h1>
+            <p>Experience the thrill of a lifetime!</p>
+        </section>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">        
-    </head>
-    <body>
-        <header>
-            <main>
-                <img src="images/raft.png" alt="Rafting-Logo" width="200">
-            </main>
-        </header>
-    
-    </body>
+        <section class="newsletter">
+            <h2>Sign Up for Our Newsletter</h2>
+            <form action="submit_newsletter.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section class="call-to-action">
+            <h2>Ready for Adventure?</h2>
+            <p>Join us for an unforgettable experience on the water!</p>
+            <a href="trips.html" class="cta-button">View Our Trips</a>
+        </section>
+
+        <section class="history">
+            <h2>Our Journey</h2>
+            <div class="history-content">
+                <div>
+                    <img src="images/clients2.jpg" alt="Clients" width="300">
+                    <p>Explore our rich history of thrilling rafting experiences!</p>
+                </div>
+                <div>
+                    <img src="images/clients3.jpg" alt="Rafting Action" width="300">
+                    <p>Join us for a day filled with excitement and adventure!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2024 | Rafting Company | Guilherme Souza</p>
+        <nav class="social-links">
+            <a href="https://facebook.com"><img src="images/face-logo.png" alt="Facebook" width="50"></a>
+            <a href="https://twitter.com"><img src="images/x-logo.png" alt="Twitter" width="50"></a>
+            <a href="https://instagram.com"><img src="images/insta-logo.jpeg" alt="Instagram" width="50"></a>
+        </nav>
+    </footer>
+</body>
 </html>
+
